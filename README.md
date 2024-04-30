@@ -39,19 +39,18 @@ I wrote the program with the Django and Django Rest Framework to properly visual
 ### The Postman Documentation details on how to access the endpoints my API accepts
 ```
 Blog Post List
-
 Endpoint: GET /api/posts/
 Description: Get a list of all blog posts
 Request Headers: Authorization: Token <token>
 Response: 200 OK
-Blog Post Detail
 
+Blog Post Detail
 Endpoint: GET /api/posts/<int:pk>/
 Description: Get the details of a specific blog post
 Request Headers: Authorization: Token <token>
 Response: 200 OK
-Blog Post Create
 
+Blog Post Create
 Endpoint: POST /api/posts/
 Description: Create a new blog post
 Request Headers: Authorization: Token <token>
@@ -59,13 +58,11 @@ Request Body:
 Copy code
 {
   "title": "My First Post",
-  "description": "This is my first post",
-  "tags": ["nodejs", "express"],
-  "body": "This is the content of my post"
+  "content": "This is the content of my post"
 }
 Response: 201 Created
-Blog Post Update
 
+Blog Post Update
 Endpoint: PUT /api/posts/<int:pk>/
 Description: Update a specific blog post
 Request Headers: Authorization: Token <token>
@@ -73,31 +70,29 @@ Request Body:
 Copy code
 {
   "title": "My Updated Post",
-  "description": "This is my updated post",
-  "tags": ["nodejs", "express"],
-  "body": "This is the updated content of my post"
+  "content": "This is the updated content of my post"
 }
 Response: 200 OK
-Blog Post Delete
 
+Blog Post Delete
 Endpoint: DELETE /api/posts/<int:pk>/
 Description: Delete a specific blog post
 Request Headers: Authorization: Token <token>
 Response: 204 No Content
-Blog Comment List
 
+Blog Comment List
 Endpoint: GET /api/posts/<int:pk>/comments/
 Description: Get a list of all comments for a specific blog post
 Request Headers: Authorization: Token <token>
 Response: 200 OK
-Blog Comment Detail
 
+Blog Comment Detail
 Endpoint: GET /api/posts/<int:pk>/comments/<int:comment_pk>/
 Description: Get the details of a specific comment for a specific blog post
 Request Headers: Authorization: Token <token>
 Response: 200 OK
-Blog Comment Create
 
+Blog Comment Create
 Endpoint: POST /api/posts/<int:pk>/comments/
 Description: Create a new comment for a specific blog post
 Request Headers: Authorization: Token <token>
@@ -107,8 +102,8 @@ Copy code
   "content": "This is a comment"
 }
 Response: 201 Created
-Blog Comment Update
 
+Blog Comment Update
 Endpoint: PUT /api/posts/<int:pk>/comments/<int:comment_pk>/
 Description: Update a specific comment for a specific blog post
 Request Headers: Authorization: Token <token>
@@ -118,8 +113,8 @@ Copy code
   "content": "This is an updated comment"
 }
 Response: 200 OK
-Blog Comment Delete
 
+Blog Comment Delete
 Endpoint: DELETE /api/posts/<int:pk>/comments/<int:comment_pk>/
 Description: Delete a specific comment for a specific blog post
 Request Headers: Authorization: Token <token>
