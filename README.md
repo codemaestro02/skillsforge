@@ -8,29 +8,30 @@ I wrote the program with the Django and Django Rest Framework to properly visual
 ### To start, clone Project files or use your project files
 
 #### Make sure you have git installed
-git clone [https://github.com/codemaestro02/skillsforge.git](https://github.com/codemaestro02/skillsforge.git)
+-> `git clone [https://github.com/codemaestro02/skillsforge.git](https://github.com/codemaestro02/skillsforge.git)`
 #### clone with SSH
-git clone [git@github.com:codemaestro02/skillsforge.git](git@github.com:codemaestro02/skillsforge.git)
+-> `git clone [git@github.com:codemaestro02/skillsforge.git](git@github.com:codemaestro02/skillsforge.git)`
 
 #### Create Virtual environment
+-> Windows
+`py -m venv env`
 
-# Windows
-py -3 -m venv env
-# Linux and Mac
-python3 -m venv env
--> Activate environment
+-> Linux and Mac
+`python3 -m venv env`
 
-# Windows
-.\env\Scripts\activate
-# Linux and Mac
-source env/bin/activate
--> Install Requirements
+#### Activate environment
+-> Windows
+`.\env\Scripts\activate`
 
-pip install -r requirements.txt
+-> Linux and Mac
+`source env/bin/activate`
 
-# create first user
-python manage.py createsuperuser
+#### Install Requirements
+`pip install -r requirements.txt`
 
-# Make sure the app is running properly
-python manage.py check
-python manage.py runserver
+#### Create first user
+`python manage.py createsuperuser`
+
+#### Make sure the app is running properly
+`python manage.py check`
+`python manage.py runserver`
