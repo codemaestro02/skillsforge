@@ -5,14 +5,14 @@ The number concatenation and string compression are very *self-explanatory*, tha
 ## Section two
 I wrote the program with the Django and Django Rest Framework to properly visualize the API endpoints.
 
--> To start, clone Project files or use your project files
+### To start, clone Project files or use your project files
 
-# Make sure you have git installed
+#### Make sure you have git installed
 git clone [https://github.com/codemaestro02/skillsforge.git](https://github.com/codemaestro02/skillsforge.git)
-# clone with SSH
+#### clone with SSH
 git clone [git@github.com:codemaestro02/skillsforge.git](git@github.com:codemaestro02/skillsforge.git)
 
--> Create Virtual environment
+#### Create Virtual environment
 
 # Windows
 py -3 -m venv env
