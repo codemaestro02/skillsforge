@@ -8,9 +8,10 @@ I wrote the program with the Django and Django Rest Framework to properly visual
 -> To start, clone Project files or use your project files
 
 # Make sure you have git installed
-git clone https://github.com/codemaestro02/skillsforge.git
+git clone [https://github.com/codemaestro02/skillsforge.git](https://github.com/codemaestro02/skillsforge.git)
 # clone with SSH
-git clone git@github.com:codemaestro02/skillsforge.git
+git clone [git@github.com:codemaestro02/skillsforge.git](git@github.com:codemaestro02/skillsforge.git)
+
 -> Create Virtual environment
 
 # Windows
